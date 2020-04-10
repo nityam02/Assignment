@@ -5,6 +5,8 @@ import { PrivateRoute } from "./components";
 import { ThemeProvider } from "@material-ui/styles";
 import { SharedSnackbarProvider } from "./contexts/Snackbar";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+import "./index.scss"
+import "./common.scss"
 
 import theme from "./theme";
 

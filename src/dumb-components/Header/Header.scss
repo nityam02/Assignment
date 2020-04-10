@@ -1,0 +1,17 @@
+
+
+.component-navbar {
+  background: transparent;
+
+  .top-bar {
+    height: 100px;
+  }
+  .nav-item{
+    cursor: pointer;
+  }
+  .nav-list-item {
+    &:hover {
+      color: red;
+    }
+  }
+}
