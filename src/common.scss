@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+.primary-button {
+    border-radius: 8px;
+    background-color:$main;
+    width: 340px;
+    height: 55px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: Gilroy;
+    @media (max-width:576px) {
+      width:271px;
+      height: 45px;
+    }
+  }
+  .bg-mild-white{
+    background-color: #f4f5f7;
+  }
+  .content-holder {
+    max-width: 940px;
+    margin: 0 auto;
+    @media (max-width:576px) {
+      max-width: 305px;
+      margin: 0 auto;
+    }
+  }
+  .error-state{
+    border: solid 1px #d13a2b !important;
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 600;
+      color:#d13a2b !important;
+    }
+  }
+
+  .user-input {
+    padding: 15px 25px;
+    border-radius: 8px;
+    letter-spacing: -0.14px;
+    width: 100%;
+    max-width: 340px;
+    height:55px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+    border:none;
+    font-family: Gilroy;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::placeholder{
+      opacity: 0.4;
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(28, 21, 19, 0.5);
+      overflow: visible;
+    }
+    @media (max-width:576px){
+      max-width: 271px;
+    }
+    &:focus {
+      border: 0.7px solid $main ;
+    }
+  }
+
+  .container-holder{
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (max-width:600px){
+      max-width: 305px;
+      margin: 0 auto;
+    }
+  }
+ 
+

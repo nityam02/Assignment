@@ -1,0 +1,381 @@
+@import './variables.scss';
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-grow-#{i} {
+  flex-grow: i;
+}
+
+// generate flex-value
+.flex-#{i} {
+  flex: i;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.display-none{
+  display: none;
+}
+
+.select-none {
+  user-select: none;
+}
+
+.apperence-none{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.rounded-4 {
+  border-radius: 4px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-15{
+  width:15%;
+}
+.w-20 {
+  width: 20%;
+}
+
+.w-25 {
+  width: 25%;
+}
+.w-30 {
+  width:30%;
+}
+.w-33 {
+  width: 33.33%;
+}
+
+.w-40 {
+  width: 40%;
+}
+.w-45 {
+  width: 45%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60p{
+  width: 60px;
+}
+
+.w-70{
+  width: 70%;
+}
+
+.select-none {
+  user-select: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.pin-b {
+  bottom: 0;
+}
+.pin-r{
+  right:0;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.text-darkblue {
+  color: #273768;
+}
+.text-white {
+  color: #fff;
+}
+.text-black{
+  color: #000;
+}
+
+.text-error {
+  color: #E76255;
+}
+
+.text-offwhite {
+  color: #6c6c6c;
+}
+.text-main {
+  color: $main;
+}
+
+.text-60 {
+  font-size: 60px;
+}
+
+.no-underline{
+  text-decoration: none;
+}
+
+.font-markpro {
+  font-family: "MarkPro";
+}
+
+.bg-white {
+  background-color: #fff;
+}
+.bg-transparent{
+  background:transparent
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+
+.bg-white {
+  color: #fff;
+}
+
+.text-60 {
+  font-size: 60px;
+}
+
+.text-11 {
+  font-size: 11px;
+}
+
+.opacity-30 {
+  opacity: 0.4;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.bg-main {
+  background-color: $main;
+}
+
+
+//line height classes
+.leading-normal {
+  line-height: 1.30;
+}
+
+.leading-relaxed {
+   line-height: 1.5;
+}
+
+.leading-high{
+  line-height: 1.6;
+}
+// Line Spacing
+
+.tracking-tight{
+  letter-spacing: -0.43px;
+}
+
+.m-0{
+  margin: 0px;
+}
+
+
+// generates text-12 class for font-sizes
+@for $i from 10 through 50 {
+  .text-#{$i} {
+    font-size: 1px * $i;
+  }
+}
+
+// font-300 for font-weight: 300
+@for $i from 1 through 9 {
+  .font-#{$i*100} {
+    font-weight: 100 * $i;
+  }
+}
+
+.font-350 {
+  font-weight: 350;
+}
+
+//padding
+@for $i from 1 through 40 {
+  .p-#{$i*2} {
+    padding: 2px*$i;
+  }
+}
+
+//padding-bottom
+@for $i from 1 through 30 {
+  .pb-#{$i*2} {
+    padding-bottom: 2px * $i;
+  }
+}
+
+//padding-top
+@for $i from 1 through 30 {
+  .pt-#{$i*2} {
+    padding-top: 2px * $i;
+  }
+}
+
+// margin-top
+@for $i from 1 through 50 {
+  .mt-#{$i*1} {
+    margin-top: 1px * $i;
+  }
+}
+
+// margin-bottom
+@for $i from 1 through 40 {
+  .mb-#{$i*2} {
+    margin-bottom: 2px * $i;
+  }
+}
+
+//margin-left
+@for $i from 1 through 20 {
+  .ml-#{$i*2} {
+    margin-left: 2px * $i;
+  }
+}
+
+// margin-right
+@for $i from 1 through 20 {
+  .mr-#{$i*2} {
+    margin-right: 2px * $i;
+  }
+}
+
+// opacity
+@for $i from 1 through 10 {
+  .opacity-#{$i} {
+    opacity: $i/10;
+  }
+}
+
+.icon-sm {
+  height: 15px;
+  width: 12px;
+}
+
+.bold-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 18px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.45px;
+color: #000000;
+}
+
+.sub-paragraph {
+  opacity: 0.4;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #000000;
+}
